@@ -36,8 +36,8 @@
                     <input type="email" name="userEmail" id="userEmail" required>
                         <br>
 
-                <label for="userPhone">Telefone:</label>
-                    <input type="tel" name="userPhone" id="userPhone" pattern=" [0-9]{11}" placeholder="21987554321"> 
+                <label for="userPhone">Telefone</label>
+                    <input type="tel" name="userPhone" id="userPhone" pattern= "[0-9]{11}" placeholder="21987554321"> 
                         <br>
 
                 <label for="userImage">Upload de foto:</label>
@@ -146,6 +146,44 @@
                 <label for="userFavoriteColor">Cor Favorita:</label>
                 <input type="color" name="userFavoriteColor" id="userFavoriteColor">
             </fieldset>
+
+            <!-- fieldset satisfacao-->
+
+            <fieldset>
+                <legend>Satisfação</legend>
+
+                <p>Nível de satisfação com o SenaiTec</p>
+
+            <input type="radio" name="userSatisfaction" id="userSatisfaction">
+            <label for="UserSatisfaction1">Ótima</label>
+            <br>
+            <input type="radio" name="userSatisfaction" id="userSatisfaction">
+            <label for="UserSatisfaction2">Boa</label>
+            <br>
+            <input type="radio" name="userSatisfaction" id="userSatisfaction">
+            <label for="UserSatisfaction3">Regular</label>
+            <br>
+            <input type="radio" name="userSatisfaction" id="userSatisfaction">
+            <label for="UserSatisfaction4">Ruim</label>
+            <br>
+
+            <label for="userComment">Deixe seu comentário:</label>
+            <textarea name="userComment" id="userComment"></textarea>
+            </fieldset>
+
+            <fieldset>
+                <legend>Confirmações</legend>
+
+                <input type="checkbox" name="userConfirm" id="userConfirm1" value="accept" required>
+                <label for="userConfirm">Eu aceito participar da pesquisa.</label>
+                <br>
+
+                <input type="checkbox" name="userConfirm" id="userConfirm2" value="Optional">
+                <label for="userConfirm2">Desejo receber os resultados por email.</label>
+                <br>
+
+            </fieldset>
+           
 
             <button type="submit">Enviar</button>
 
