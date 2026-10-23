@@ -14,7 +14,7 @@
         </header>
             
         <section> 
-            <form action="index.html" method="get">
+            <form action="https://formspree.io/f/mkjjnlbr" method="post">
             
             <fieldset> 
                 <legend>Dados Pessoais</legend>
@@ -76,7 +76,7 @@
 
 
                 <label for="userUf">Estado</label>
-                <select name="userState" id="userState">
+                <select name="userState" id="userState" required>
                     <option value="">Selecione...</option>
                     <option value="AC">Acre</option>
                     <option value="AP">Amapá</option>
@@ -174,18 +174,19 @@
             <fieldset>
                 <legend>Confirmações</legend>
 
-                <input type="checkbox" name="userConfirm" id="userConfirm1" value="accept" required>
-                <label for="userConfirm">Eu aceito participar da pesquisa.</label>
+                <input type="checkbox" name="userLGPD" id="userLGPD" value="lgpd" required>
+                <label for="userLGDP">Eu aceito participar da pesquisa</label>
                 <br>
 
-                <input type="checkbox" name="userConfirm" id="userConfirm2" value="Optional">
-                <label for="userConfirm2">Desejo receber os resultados por email.</label>
+                <input type="checkbox" name="userConfirmEmail" id="userConfirmEmail" value="Email">
+                <label for="userConfirmEmail">Desejo receber os resultados por email</label>
                 <br>
 
             </fieldset>
            
 
             <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
 
             </form>
         </section>
